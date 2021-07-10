@@ -34,12 +34,12 @@ function Home() {
         delay
       );
       return () => {
-          resetTimeout();
+        resetTimeout();
       };
     }, [index]);
 
     return (
-      <div className="home__container">
+      <div className="home__image">
         <div
           className="home__slideshowSlider"
           style={{ transform: `translate3d(${-index * 100}%, 0,0)` }}
@@ -77,59 +77,61 @@ function Home() {
         <Slideshow />
       </div>
 
-      <div className="home__row">
-        <Product
-          id={453201}
-          title="The lean Startup: How Constant Innovation Creates Radically Successful Business Paperback"
-          price={399}
-          image="https://m.media-amazon.com/images/I/51WIKlio9qL.jpg"
-          rating={5}
-        />
-        <Product
-          id={5478963}
-          title="2020 Apple iPad Air with A14 Bionic chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Green (4th Generation)"
-          image="https://m.media-amazon.com/images/I/71SAHzzQqkL._AC_UY218_.jpg"
-          rating={4}
-          price={56990}
-        />
-        <Product
-          id={456314}
-          title="Titan
+      <div className="home__sell">
+        <div className="home__row">
+          <Product
+            id={453201}
+            title="The lean Startup: How Constant Innovation Creates Radically Successful Business Paperback"
+            price={399}
+            image="https://m.media-amazon.com/images/I/51WIKlio9qL.jpg"
+            rating={5}
+          />
+          <Product
+            id={5478963}
+            title="2020 Apple iPad Air with A14 Bionic chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Green (4th Generation)"
+            image="https://m.media-amazon.com/images/I/71SAHzzQqkL._AC_UY218_.jpg"
+            rating={4}
+            price={56990}
+          />
+          <Product
+            id={456314}
+            title="Titan
 Octane Analog Silver Dial Men's Watch NM1650BM03/NN1650BM03 "
-          price={5999}
-          image="https://images-na.ssl-images-amazon.com/images/I/41UO1GGVyKL._SY300_SX300_.jpg"
-          rating={5}
-        />
-      </div>
+            price={5999}
+            image="https://images-na.ssl-images-amazon.com/images/I/41UO1GGVyKL._SY300_SX300_.jpg"
+            rating={5}
+          />
+        </div>
 
-      <div className="home__row">
-        <Product
-          id={1463643}
-          title="Mi 80 cm (50 inches) HD Ready Android Smart LED TV 4A PRO|L32M5-AL (Black)"
-          rating={4}
-          price={59999}
-          image="https://m.media-amazon.com/images/I/71Z+l05eSIS._AC_UL320_.jpg"
-        />
-      </div>
+        <div className="home__row">
+          <Product
+            id={1463643}
+            title="Mi 80 cm (50 inches) HD Ready Android Smart LED TV 4A PRO|L32M5-AL (Black)"
+            rating={4}
+            price={59999}
+            image="https://m.media-amazon.com/images/I/71Z+l05eSIS._AC_UL320_.jpg"
+          />
+        </div>
 
-      <div className="home__amazonlanuagead">
-        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Vernac13th/1500x150_V2_Eng._CB412582591_.jpg" />
-      </div>
-      <div className="home__row">
-        <Product
-          id={85632}
-          image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
-          title="Kenwood kMix Stand Mixer for Baking, STylish Kitchen Mixer with K-beater, 5 Litre Glass Bowl"
-          price={799}
-          rating={4}
-        />
-        <Product
-          id={54762}
-          title="Amazon Echo (3rd gen) | Smart speaker with Alexa"
-          price={4999}
-          rating={5}
-          image="https://images.unsplash.com/photo-1543512214-318c7553f230?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-        />
+        <div className="home__amazonlanuagead">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Vernac13th/1500x150_V2_Eng._CB412582591_.jpg" />
+        </div>
+        <div className="home__row">
+          <Product
+            id={85632}
+            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            title="Kenwood kMix Stand Mixer for Baking, STylish Kitchen Mixer with K-beater, 5 Litre Glass Bowl"
+            price={799}
+            rating={4}
+          />
+          <Product
+            id={54762}
+            title="Amazon Echo (3rd gen) | Smart speaker with Alexa"
+            price={4999}
+            rating={5}
+            image="https://images.unsplash.com/photo-1543512214-318c7553f230?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+          />
+        </div>
       </div>
     </div>
   );
